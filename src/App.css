@@ -63,3 +63,37 @@
   color: #8183ff;
 }
 
+/* Grid Area Style */
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "navBar main"
+    "footer footer";
+  grid-template-rows: auto 1fr 6rem;
+  grid-template-columns: 15rem 1fr;
+  min-height: 100vh;
+}
+
+@media (max-width: 1400px){
+  .grid-container{
+    grid-template-areas: 
+      "header"
+      "navBar"
+      "main"
+      "footer";
+    grid-template-rows: auto 2rem 1fr 6rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 991px){
+  .grid-container{
+    grid-template-areas: 
+      "header"
+      "main"
+      "footer";
+    grid-template-rows: auto 1fr 6rem;
+    grid-template-columns: 1fr;
+  }
+}
