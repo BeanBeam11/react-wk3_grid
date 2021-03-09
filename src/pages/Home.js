@@ -1,4 +1,5 @@
 import Header from "../components/Header"
+import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import ProductList from "../components/ProductList";
 
@@ -7,6 +8,7 @@ function Home() {
     <div className="bg-color">
         <div className="container grid-container">
             <Header />
+            <NavBar />
             <ProductList />
             <Footer />
         </div>
