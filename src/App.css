@@ -63,6 +63,27 @@
   color: #8183ff;
 }
 
+/* NavBar Style */
+.navBar{
+  grid-area: navBar;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.navItem{
+  cursor: pointer;
+  color: white;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  opacity: 0.6;
+  transition: opacity .25s linear;
+}
+.navItem:hover{
+  color: white;
+  opacity: 1;
+}
+
 /* Grid Area Style */
 .grid-container{
   display: grid;
