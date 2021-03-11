@@ -66,13 +66,12 @@
 /* NavBar Style */
 .navBar{
   grid-area: navBar;
-  z-index: 9;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
-  grid-gap: 2rem; */
+  /* z-index: 9; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: flex-start; */
+  /* display: grid; */
+  /* grid-auto-flow: row; */
 }
 .navItem{
   cursor: pointer;
@@ -101,7 +100,10 @@
 
 @media (max-width: 1400px){
   .navBar{
-    flex-direction: row;
+    /* flex-direction: row;
+    justify-content: space-around; */
+    display: grid;
+    grid-auto-flow: column;
     justify-content: space-around;
   }
   .navItem{
